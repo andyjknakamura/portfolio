@@ -1,0 +1,102 @@
+@font-face {
+    font-family: largeText;
+    src: url(resources/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: smallText;
+    src: url(resources/segoeui.ttf);
+}
+
+@font-face {
+    font-family: navText;
+    src: url(resources/Poppins-Regular.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: largeText;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p, ul, ol {
+    font-family: smallText;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: navText;
+    background-color: #fff;
+    margin: 15px 3px 3px 3px;
+    padding: 10px 20px 10px 20px;
+}
+
+nav a {
+    text-align: center;
+    color: #000;
+    display: inline-block;
+    border: solid 3px black;
+    width: 70px;
+    padding: 14px 16px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width: 100px;
+    height: 50px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skip:focus, a.skip:active {
+    left: auto;
+    top: 50px;
+    z-index:999;
+}
+  
+a:hover, a:focus {
+    background-color: #87ceeb;
+}
+
+.active {
+    background-color:#00bfff;
+    font-weight: bold;
+}
+
+.top {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    nav {
+        flex-flow: row wrap;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+    }
+    .top {
+        display: flex;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    nav, .top {
+        display: inline-block;
+    }
+    nav {
+        width: 95%;
+    }
+    .top {
+        float: right;
+    }
+}

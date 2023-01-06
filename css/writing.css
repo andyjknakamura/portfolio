@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+header {
+    flex: 0 0 100%;
+}
+
+.image h2 {
+    padding: 20px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#holding {
+    background-image: url('resources/images/holding_onto_and_letting_go.jpg');
+}
+
+#defying {
+    background-image: url('resources/images/defying_manhood.jpg');
+}
+
+#omori {
+    background-image: url('resources/images/ominous_red_button.jpg');
+}
+
+#finding {
+    background-image: url('resources/images/in_my_own_skin.jpg');
+}
+
+#beyond {
+    background-image: url('resources/images/beyond_face_value.jpg');
+}
+
+#preemptive {
+    background-image: url('resources/images/preemptive_grief.jpg');
+}
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@media screen and (min-width: 700px) {
+    div.image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 400px;
+        width: 400px;
+    }
+}
