@@ -1,12 +1,5 @@
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10px;
-}
-
-header {
-    flex: 0 0 100%;
+body {
+    text-align: center;
 }
 
 .image h2 {
@@ -46,12 +39,49 @@ header {
 }
 
 @media screen and (min-width: 700px) {
+    body {
+        text-align: left;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #intro  {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #title {
+        max-height: none;
+        width: 35%;
+        text-align: left;
+    }
+    #subtitle {
+        width: 65%;
+        text-align: left;
+    }
+    
+    p.quote {
+        font-style: italic;
+        font-size: 2em;
+    }
+
     div.image {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         height: 400px;
-        width: 400px;
+        min-width: 400px;
+        max-width: 400px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
     }
 }

@@ -57,7 +57,21 @@ h2 {
     header {
         grid-column: 1 / span 4;
     }
+
     #finalimg {
         grid-column-start: 2;
+    }
+
+    div.graphic {
+        align-items: center;
+    }
+
+    p.graphic {
+        grid-column: span 2;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
     }
 }
